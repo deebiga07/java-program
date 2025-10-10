@@ -1,0 +1,415 @@
+7.sila wants to know how the Arithmetic operators are performing in programming.could you please help her to learn the Arithmetic calculation.
+
+Input Format
+
+First input consist of integer
+second input consist of integer
+Constraints
+No Constraints
+Output Format
+execute the Arithmetic calculation values.
+  
+Sample Input 0
+45
+7
+  
+Sample Output 0
+Addition=52
+Subtraction=38
+Multiplication=315
+Division=6
+Modulo=3
+
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int add=a+b;
+        int sub=a-b;
+        int mul=a*b;
+        int div=a/b;
+        int mod=a%b;
+        System.out.println("Addition="+add);
+        System.out.println("Subtraction="+sub);
+        System.out.println("Multiplication="+mul);
+        System.out.println("Division="+div);
+        System.out.println("Modulo="+mod);
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8.John wants to know how to calculate the subject marks.could you please help him to learn marks calculation in programming.
+
+Input Format
+
+First input consists of String
+Second input consists of integer
+Third input consists of integer
+Fourth input consists of integer
+Fifth input consists of integer
+Sixth input consists of integer
+Constraints
+
+No Constraints
+
+Output Format
+
+Execute the total and Average Marks.
+Sample Input 0
+
+John
+100
+99
+100
+100
+99
+Sample Output 0
+
+Name of the Student:John
+Total marks:498
+
+  program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String b=sc.nextLine();
+        int a=sc.nextInt();
+        int g=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int total=a+g+c+d+e;
+        double average=total/5.0;
+        System.out.println("Name of the Student:"+b);
+        System.out.println("Total marks:"+total);
+        System.out.println("Average marks:"+average);
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9.Veena wants to learn shape calculation for Square,Rectangle,Circle,Triangle to implements in programming.Could you please help her to how to write the program. - Square formula:a*a - Rectangle formula:l*b - Circle formula:πr^2 - Triangle formula:1/2*(b*h)
+
+Input Format
+
+First input consist of integer for side.
+Second and third input consists of integer for Length and breadth.
+forth input consist of radius.
+Fifth and Sixth input consist of Base and height.
+Constraints
+
+No Constraints
+
+Output Format
+
+Execute the area of shape calculation values.
+Sample Input 0
+
+2
+3
+2
+3
+6
+5
+Sample Output 0
+
+Area of Square=4
+Area of Rectangle=6
+Area of Circle=28.27
+Area of Triangle=15
+Sample Input 1
+
+2
+3
+4
+5
+6
+7
+Sample Output 1
+
+Area of Square=4
+Area of Rectangle=12
+Area of Circle=78.53
+Area of Triangle=21
+
+
+  program:
+  import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int s=sc.nextInt();
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int h=sc.nextInt();
+        int as=s*s;
+        int ar=l*b;
+        double ac=Math.floor(Math.PI*Math.pow(r,2)*100)/100;
+        int am=c*h/2;
+        System.out.println("Area of Square="+as);
+        System.out.println("Area of Rectangle=" +ar);
+        System.out.printf("Area of Circle=%.2f\n",ac);
+        System.out.println("Area of Triangle="+am);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10.Veena wants to learn shape calculation for Square,Rectangle,Circle,Triangle to implements in programming.Could you please help her to how to write the program. Notes: - Square formula:4a - Rectangle formula:2(l+w) - Circle formula:2πr - Triangle formula:side+base+side
+
+Input Format
+First input consist of integer for side.
+Second and third input consists of integer for Length and Width.
+forth input consist of radius.
+Fifth,Sixth and Seventh input consist of Base1,side and Base2 .
+Constraints
+No Constraints
+Output Format
+Execute the area of shape calculation values.
+Sample Input 0
+9
+8
+7
+6
+5
+4
+3
+Sample Output 0
+Perimeter of Square:36
+Perimeter of Rectangle:30
+Perimeter of Circle:37.69
+Perimeter of Triangle:12
+
+
+  program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int s=sc.nextInt();
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int h=sc.nextInt();
+        int k=sc.nextInt();
+        int ps=4*s;
+        int pr=2*(l+b);
+        double pc=Math.floor((2*Math.PI*r)*100)/100;
+        int pt=c+h+k;
+        System.out.println("Perimeter of Square:"+ps);
+        System.out.println("Perimeter of Rectangle:"+pr);
+        System.out.printf("Perimeter of Circle:%.2f\n",pc);
+        System.out.println("Perimeter of Triangle:"+pt);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bill Generator 2:
+  
+  ohra went to a movie with his friends in a Wave theatre and during break time he bought pizzas, puffs and cool drinks. Consider the following prices :
+
+Rs.100/pizza Rs.20/puffs Rs.10/cooldrink Generate a bill for What Vohra has bought.
+
+Input Format
+
+Sample Input 1:
+Enter the no of pizzas bought:10
+Enter the no of puffs bought:12
+Enter the no of cool drinks bought:5
+Constraints
+Constraints: No Constraints
+
+Output Format
+Sample Output 1:
+Bill Details
+No of pizzas:10
+No of puffs:12
+No of cooldrinks:5
+Total price=1290
+Sample Input 0
+12
+7
+3
+Sample Output 0
+Bill Details
+No of pizzas:12
+No of puffs:7
+No of cooldrinks:3
+Total price=1370
+ENJOY THE SHOW!!!
+Sample Input 1
+11
+12
+19
+Sample Output 1
+Bill Details
+No of pizzas:11
+No of puffs:12
+No of cooldrinks:19
+Total price=1530
+ENJOY THE SHOW!!!
+
+  program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int pizza=100*a;
+        int puff=20*b;
+        int cool=10*c;
+        int total=pizza+puff+cool;
+      System.out.println("Bill Details");
+        System.out.println("No of pizzas:"+a);
+        System.out.println("No of puffs:"+b);
+        System.out.println("No of cooldrinks:"+c);
+        System.out.println("Total price="+total);
+        System.out.println("ENJOY THE SHOW!!!");
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dept repay:
+
+Alice wanted to start a business and she was looking for a venture capitalist. Through her friend Bob, she met the owner of a construction company who is interested to invest in an emerging business. Looking at the business proposal, the owner was very much impressed with Alice's work. So he decided to invest in Alice's business and hence gave a green signal to go ahead with the project.
+Alice bought Rs.X for a period of Y years from the owner at R% interest per annum. Find the rate of interest and the total amount to be given by Alice to the owner. The owner impressed by proper repayment of the financed amount decides to give a special offer of 2% discount on the total interest at the end of the settlement. Find the amount given back by Alice and also find the total amount. (Note: All rupee values should be in two decimal points).
+
+Input Format
+Input consists of 3 integers. - The first integer corresponds to the principal amount borrowed by Alice. - The second integer corresponds to the rate of interest - The third integer corresponds to the number of years.
+Constraints
+No Constraints
+
+Output Format
+The output consists of 4 floating point values. - The first value corresponds to the interest. - The second corresponds to the amount. - The third value corresponds to the discount. - The last value corresponds to the final settlement. - All floating point values are to be rounded off to two decimal places
+Sample Input 0
+100
+1
+10
+Sample Output 0
+10.00
+110.00
+0.20
+109.80
+Sample Input 1
+7000
+3
+5
+Sample Output 1
+1050.00
+8050.00
+21.00
+8029.00
+
+
+  program:
+  import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        double id=a*b*c/100.0;
+        double total=a+id;
+        double dis=(2*id)/100.0;
+        double fs=total-dis;
+        System.out.printf("%.2f\n",id);
+        System.out.printf("%.2f\n",total);
+        System.out.printf("%.2f\n",dis);
+        System.out.printf("%.2f\n",fs);
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The newspaper agency:
+
+Each Sunday, a newspaper agency sells w copies of a special edition newspaper for Rs.x per copy. The cost to the agency of each newspaper is Rs.y. The agency pays a fixed cost for storage, delivery and so on of Rs.100 per Sunday. The newspaper agency wants to calculate the profit which it obtains only on Sundays. Can you please help them out by writing a program to compute the profit if w, x, and y are given.
+
+Input Format
+Input consists of 3 integers: w, x, and y.
+w is the number of copies sold, x is the cost per copy and y is the cost the agency spends per copy.
+Constraints
+No Constraints
+
+Output Format
+The output consists of a single integer which corresponds to the profit obtained by the newspaper agency.
+Sample Input 0
+1000
+2
+1
+Sample Output 0
+900
+Sample Input 1
+200
+4
+2
+Sample Output 1
+300
+
+
+  program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int w=sc.nextInt();
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int cp=x-y;
+        int tc=w*cp;
+        int profit=tc-100;
+        System.out.println(profit);
+    }
+}
+
+
