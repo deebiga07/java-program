@@ -1,0 +1,258 @@
+1.Write a program to execute the statement of given input.
+Input Format
+input consist of string
+Constraints
+No Constraints
+  
+Output Format
+executes the given string input 
+  
+ Sample Input 0
+welcome to c programming language
+  
+Sample Output 0
+welcome to c programming language
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        Scanner d=new Scanner(System.in);
+            System.out.print("welcome to c programming language");
+        String words=d.nextLine();
+    }
+}
+
+
+
+
+2.Write a program to execute the datas with the statement.
+
+Input Format
+
+first input corresponds to integer
+second input corresponds to float
+third input corresponds to char
+fourth input correspond to string
+fifth input correspond to String
+Constraints
+
+No Constraints
+
+Output Format
+execute the user inputs with the statemets
+Sample Input 0
+
+23
+45.56
+A
+hello
+hello world
+Sample Output 0
+
+Integer is 23
+Float is 45.56
+Character is A
+Strings are hello and hello world
+
+program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner d=new Scanner(System.in);
+            int i=d.nextInt();
+            float value=d.nextFloat();
+            char c=d.next().charAt(0);
+            d.nextLine();
+            String str=d.nextLine();
+            String str1=d.nextLine();
+            System.out.println("Integer is " +i);
+            System.out.println("Float is " +value);
+            System.out.println("Character is " +c);
+            System.out.println("Strings are " +str+ " and " +str1);
+        }
+    }  
+
+
+
+3.Write the program to execute conversion of other datatype.
+
+Input Format
+
+input corresponds to the integer
+Constraints
+No constraints
+Output Format
+output corresponds to the ASCII values(character)
+Sample Input 0
+68
+Sample Output 0
+D
+Sample Input 1
+111
+Sample Output 1
+o
+
+
+program:
+  import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner d=new Scanner(System.in);
+        int n=d.nextInt();
+        char c=(char)n;
+        System.out.println(c);
+       
+    }
+}
+
+
+4.write the program to execute the decimal values.
+
+Input Format
+input consists of float
+Constraints
+No Constraints
+Output Format
+execute the float values depends on the sample ouput.
+Sample Input 0
+34.12345
+Sample Output 0
+34.12345
+34.1235
+34.123
+34.12
+34.1
+34
+Sample Input 1
+56.67897
+Sample Output 1
+56.67897
+56.6790
+56.679
+56.68
+56.7
+56
+
+  program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+    double num=sc.nextDouble();
+        System.out.println(String.format("%.5f", num));
+        System.out.println(String.format("%.4f", num));
+        System.out.println(String.format("%.3f", num));
+        System.out.println(String.format("%.2f", num));
+        System.out.println(String.format("%.1f", num));
+        System.out.println((int) num);
+    }
+}
+
+
+5.kumar wants to know how the math functions are working in programming.could you please help him to write the program.
+
+Input Format
+
+First input corresponds to float is for floor,ceil and round
+second input corresponds to integer is for sqrt value
+third input corresponds to integer is for base value
+fourth input corresponds to integer is for power value
+Constraints
+No Constraints
+Output Format
+execute the values depends on the sample output format.
+Sample Input 0
+67.6734
+16
+5
+2
+Sample Output 0
+67
+68
+68
+4
+25
+
+  program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        double d=sc.nextDouble();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.println((int)Math.floor(d));
+        System.out.println((int)Math.ceil(d));
+        System.out.println(Math.round(d));
+        System.out.println((int)Math.sqrt(a));
+        System.out.println((int)Math.pow(b,c));
+    }
+}
+
+
+6.Diya wants to know how the decimal digit values are performing in programming.could you please help her to learn the decimal formatting.
+
+Input Format
+
+input consists of float
+Constraints
+
+No Constraints
+
+Output Format
+
+execute the values depends on the sample output format.
+Sample Input 0
+
+45.3456
+Sample Output 0
+
+45.34
+45.35
+
+program
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner d=new Scanner(System.in);
+        float f=d.nextFloat();
+        System.out.println(Math.floor(f*100)/100);
+        System.out.printf("%.2f",f);
+       
+    }
+}
