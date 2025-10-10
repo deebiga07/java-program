@@ -1,0 +1,791 @@
+11.Guna wants to know how to find whether the given values is positive or Negative.could you please help him to find the num type implements in programming
+
+Input Format
+
+one integer
+Constraints
+
+No Constraints
+
+Output Format
+
+if the given num is 5,execute the statement is Positive
+if the given num is -5,execute the statement is Negative
+if the given num is 0,execute the statement is Zero.
+Sample Input 0
+
+7
+Sample Output 0
+
+The Given Number 7 is Positive.
+Sample Input 1
+
+-7
+Sample Output 1
+
+The Given Number -7 is Negative.
+Sample Input 2
+
+0
+Sample Output 2
+
+program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0)
+        {
+            System.out.println("The Given Number " + a + " is Positive.");
+        }
+        else if(a<0)
+        {
+            System.out.println("The Given Number " + a + " is Negative.");
+        }
+        else
+        {
+            System.out.println("The Given Number " + a + " is Zero.");
+        }
+
+
+    12. Dheena wants to know how the grading marks will works in education.could you please help him to learn the grading System. Note:-
+
+100=Grade is S
+90-99=Grade is A
+80-89=Grade is B
+70-79=Grade is C
+60-69=Grade is D
+50-59=Grade is E
+<50=Fail
+Get the subject marks from the user,then Find the average marks.Based on the average marks generate the Students grade marks.
+Input Format
+First input consists of String
+Second input consists of integer
+Third input consists of integer
+Fourth input consists of integer
+Fifth input consists of integer
+Sixth input consists of integer
+Constraints
+No Constraints
+Output Format
+execute the total Marks,average marks and Grade Mark
+Sample Input 0
+John
+100
+99
+100
+100
+99
+Sample Output 0
+Name of the Student:John
+Total Mark:498
+Average Mark:99.6
+Grade Mark:A
+Sample Input 1
+Nivi
+30
+30
+30
+30
+30
+Sample Output 1
+Name of the Student:Nivi
+Total Mark:150
+Average Mark:30.0
+Grade Mark:Fail
+
+program:
+import java.io.*;
+import java.util.Scanner;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int total=a+b+c+d+e;
+        double average=total/5.0;
+        String grade;
+        if(average==100){
+            grade="S";
+        }
+        else if(average>=90){
+            grade="A";
+        }
+        else if(average>=90){
+            grade="B";
+        }
+        else if(average>=90){
+            grade="C";
+        }
+        else if(average>=90){
+            grade="D";
+        }
+        else if(average>=90){
+            grade="E";
+        }
+        else {
+            grade="Fail";
+        }
+        System.out.println("Name of the Student:" +s);
+        System.out.println("Total Mark:" +total);
+        System.out.printf("Average Mark:%.1f\n", average);
+        System.out.println("Grade Mark:" +grade);
+        
+    }
+}
+
+
+13. Sanjay wants to learn the calculation of integer digits.could you please help him to implements the sum of digits in programming. Notes:- - If the integer is 45,separate the each digits (4+5) the output is 9.
+
+Input Format
+
+input consists of one integer.
+Constraints
+
+Given N is greater than 9 and lesser than 99
+Output Format
+
+execute the sum of digits values. Notes:-
+If the input is above 100, execute the statements is "Invalid Input".
+Sample Input 0
+
+23
+Sample Output 0
+
+Sum of Digit 23 is 005
+Sample Input 1
+
+56
+Sample Output 1
+
+Sum of Digit 56 is 011
+Sample Input 2
+
+100
+Sample Output 2
+
+Invalid Input
+
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        if(N>=100){
+            System.out.println("Invalid Input");
+        }
+        else if(N>9 && N<100){
+            int tens=N/10;
+            int units=N%10;
+            int sum=tens+units;
+            System.out.printf("Sum of Digit %d is %03d\n", N, sum);
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        }
+      }
+
+
+ 14.Sela wants to learn the alphabets type to implements in the program.could you please her to implements the program.
+
+Input Format
+
+input consists of Character
+Constraints
+
+No Constraints
+
+Output Format
+
+if the Given input is A,print the statement is "Upper Case".
+if the Given input is a,print the statement is "Lower Case".
+if the Given input is 2,print the statement is "Number".
+if the Given input is &,print the statement is "Symbol".
+Sample Input 0
+
+A
+Sample Output 0
+
+The Given Character A is Upper Case...
+Sample Input 1
+
+a
+Sample Output 1
+
+The Given Character a is Lower Case...
+Sample Input 2
+
+4
+Sample Output 2
+
+The Given Character 4 is Number...
+Sample Input 3
+
+#
+Sample Output 3
+
+The Given Character # is Symbol...
+
+
+   program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if(Character.isUpperCase(ch)){
+            System.out.println("The Given Character " + ch + " is Upper Case...");
+        }
+        else if(Character.isLowerCase(ch)){
+            System.out.println("The Given Character " + ch + " is Lower Case...");
+        }
+        else if(Character.isDigit(ch)){
+            System.out.println("The Given Character " + ch + " is Number...");
+        }
+        else{
+            System.out.println("The Given Character " + ch + " is Symbol...");
+        }
+    }
+}
+
+
+  15.Deepak wants to know how to find whether the year is leap year or not.could you please help him to find the year is leap year or not. - A century year is a year ending with 00. A century year is a leap year only if it is divisible by 400. - A leap year (except a century year) can be identified if it is exactly divisible by 4. - A century year should be divisible by 4 and 100 both. - A non-century year should be divisible only by 4.
+
+Input Format
+
+input consists of integer
+Constraints
+
+No Constraints
+
+Output Format
+
+execute the statemene whether the given year is leap or not.
+Sample Input 0
+
+1900
+Sample Output 0
+
+The Given Year 1900 is Not a Leap Year.
+Sample Input 1
+
+2000
+Sample Output 1
+
+The Given Year 2000 is a Leap Year.
+Sample Input 2
+
+2015
+Sample Output 2
+
+The Given Year 2015 is Not a Leap Year.
+
+
+
+ program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int year=sc.nextInt();
+        if((year%4==0 && year%100!=0)||(year%400==0))
+        {
+            System.out.println("The Given Year " + year + " is a Leap Year.");
+        }
+        else
+        {
+            System.out.println("The Given Year "  + year + " is Not a Leap Year.");
+        }
+    }
+}
+
+
+
+      16.Maya wants to know how to find whether the alphabet is Vowel or Consonant.could you please help her to find the alphabet is Vowel or Consonant.
+
+Input Format
+
+input consists of one Character.
+Constraints
+
+No Constraints
+
+Output Format
+
+print whether the character is Vowel or Consonant or Invalid Input.
+Sample Input 0
+
+A
+Sample Output 0
+
+The Character A is Vowel
+Sample Input 1
+
+B
+Sample Output 1
+
+The Character B is Consonant
+Sample Input 2
+
+u
+Sample Output 2
+
+The Character u is Vowel
+Sample Input 3
+
+9
+Sample Output 3
+
+Invalid Input
+
+
+
+        import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char ch = scanner.next().charAt(0);
+        char lowerCh = Character.toLowerCase(ch);
+
+        if ((lowerCh >= 'a' && lowerCh <= 'z')) {
+            if (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' || lowerCh == 'o' || lowerCh == 'u') {
+                System.out.println("The Character " + ch + " is Vowel");
+            } else {
+                System.out.println("The Character " + ch + " is Consonant");
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+17.Kumar wants to learn how the calculators are working.so he is trying to implements the calculator program.could you please help him to implements the program. - Notes:- Must use the Switch Case.operators - Addition - Subtraction - Multiplication - Division - Modulo
+
+Input Format
+
+First input consists of integer.
+Second input consists of integer.
+third input consists of character.
+Constraints
+
+No Constraints
+
+Output Format
+print the calculation Value.
+if the symbol is not the arithmetic operator,print the statement is "Invalid Input".
+Sample Input 0
+
+3
+4
++
+Sample Output 0
+Addition of two number is 7.0
+Sample Input 1
+7
+3
+-
+Sample Output 1
+Subtraction of two number is 4.0
+Sample Input 2
+13
+2
+/
+Sample Output 2
+Division of two number is 6.5
+
+
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     
+        Scanner scanner = new Scanner(System.in);
+       int a=scanner.nextInt();
+       int b=scanner.nextInt();
+       char ch=scanner.next().charAt(0) ;
+       double result;
+       switch(ch) {
+               case '+':
+                      result=a+b;
+                System.out.println("Addition of two number is " +result);
+               break;
+               case '-':
+                      result=a-b;
+                System.out.println("Subtraction of two number is " +result);
+               break;
+               case '*':
+                      result=a*b;
+                System.out.println("Multiplication of two number is " +result);
+               break;
+               case '/':
+                      result=(double)a/b;
+                System.out.printf("Division of two number is %.1f\n", result);
+               break;
+               case '%':
+                      result=a%b;
+                System.out.println("Modulo of two number is " +result);
+               break;
+           default:
+               System.out.println("Invalid Input");
+       }
+    }
+} 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 18.Riya wants to find the greatest of three numbers.could you please help her to find the greatest of three numbers that implements in programming.
+
+Input Format
+Input consists of three integer.
+Constraint
+No Constraints
+
+Output Format
+print the greatest of three Number.
+Sample Input 0
+10
+20
+30
+Sample Output 0
+Number3 is maximum with value of 30.0
+Sample Input 1
+5
+6
+6
+Sample Output 1
+Number3 is maximum with value of 6.0
+Sample Input 2
+7
+8
+5
+Sample Output 2
+Number2 is maximum with value of 8.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+public class Solution {
+public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    double max;
+    if(a>b && a>c)
+    {
+        max=a;
+        System.out.println("Number1 is maximum with value of " +max);
+    }
+    else if(b>a && b>c)
+    {
+        max=b;
+        System.out.println("Number2 is maximum with value of " +max);
+    }
+    else
+    {
+        max=c;
+        System.out.println("Number3 is maximum with value of " +max);
+    }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+19.Maya wants to know how the Numbers are converted to string in the program.could you please help her to implements the program.
+
+Input Format
+
+input consists of one integer
+Constraints
+
+Given N is greater than 0 and lesser than 9
+        
+Output Format
+print the number into string type.
+Sample Input 0
+0
+Sample Output 0
+Integer is 0 and String is Zero
+Sample Input 1
+2
+Sample Output 1
+Integer is 2 and String is Two
+Sample Input 2
+10
+Sample Output 2
+Invalid Input
+
+
+ program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    String w;
+    switch(a)
+    {
+        case 0:
+            w="Zero";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 1:
+            w="One";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 2:
+            w="Two";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 3:
+            w="Three";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 4:
+            w="Four";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 5:
+            w="Five";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 6:
+            w="Six";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 7:
+            w="Seven";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 8:
+            w="Eight";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        case 9:
+            w="Nine";
+            System.out.println("Integer is " + a + " and String is " + w);
+        break;
+        default:
+            System.out.print("Invalid Input");
+            break;
+       
+           
+    }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+20.College Management wants to separate the eligible students for their placement.so find the eligible students for the placement.
+
+Notes:-
+
+- If the students has 1 arrear and the cpga is above 70 - They are eligible for Placement.
+- If the students has 1 or 2 arrear and the cpga is above 75 -They are eligible for Placement.
+- Remaining students aren't eligible for Placement.
+        
+Input Format
+input consists of one String and two integer.
+Constraints
+No Constraints
+
+Output Format
+print the statement "Eligible for Placement" or "Not Eligible for Placement".
+Sample Input 0
+John
+1
+76
+Sample Output 0
+Name of the Student:John
+John is Eligible for Placement
+Sample Input 1
+John
+2
+70
+Sample Output 1
+Name of the Student:John
+John is Not Eligible for Placement
+
+program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+    String a=sc.nextLine();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    System.out.println("Name of the Student:" +a);
+    if((b==1 && c>70) || (b==2 && c>75))
+    {
+        System.out.println(a+" is Eligible for Placement");
+    }
+      else
+      {
+          System.out.println(a+ " is Not Eligible for Placement");
+      }
+    }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Harry potter and the sorcerer's stone:
+   
+ Having crossed the three-headed dog, Harry, Ron, and Hermoine went through a secret trap door in search of Sorcerer's stone. On the way, they passed through a room and found that the room has only one door opposite to them and the door through which they entered has shut once they entered the room. The door was very large with a four digit number imprinted on it. When Harry and Ron tried to open it by casting out spells, it didn't open. Having tried various spells both of them got fed up and they left the task to Hermoine. Hermoine on curiously observing the room found that a statement was written on the top of the room. It was written as follows "I will be always four" “I can only be opened when you add my first and last and enter it” “If you find a sign, you should not consider it” Help Hermoine break the code and open the door so that they can save the sorcerer's stone.
+
+Input Format
+Input consists of a single integer which is present on the door.
+Constraints
+No Constraints
+
+Output Format
+The output is a single integer.
+Sample Input 0
+1001
+Sample Output 0
+2
+Sample Input 1
+1543
+Sample Output 1
+4
+
+ program:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int last=n%10;
+        int first=n;
+        while(first>=10)
+        {
+            first/=10;
+        }
+        int sum=first+last;
+        System.out.println(sum);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time 23:
+      On one fine Sunday, Sita and Radha decided to solve puzzles. Sita asked Radha to solve her puzzle. Sita gave the puzzle on time. She gave Radha the number of hours, number of minutes and number of seconds as input. With the given input, Radha should find out the total number of hours, the total number of minutes and the total number of seconds. Help Radha by writing a program for this. For example, the input given by Sita is 1, 70, 5. Now, 70 minutes is equal to 1 hour 10 minutes. So the output will be Total number of hour(s) is 2 Total number of minutes is 10 Total number of seconds is 5
+
+Input Format
+Input consists of three integers.
+First input corresponds to the number of hours.
+Second input corresponds to the number of minutes.
+Third input corresponds to the number of seconds.
+Constraints
+No Constraints
+
+Output Format
+Execute the Time, Minutes and Second
+Sample Input 0
+1
+15
+10
+Sample Output 0
+Total Number of hours is 1
+Total Number of minutes is 15
+Total Number of seconds is 10
+Sample Input 1
+1
+50
+120
+Sample Output 1
+Total Number of hours is 1
+Total Number of minutes is 52
+Total Number of seconds is 0
+
+
+  program:
+      import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int hours=sc.nextInt();
+        int minutes=sc.nextInt();
+        int seconds=sc.nextInt();
+            minutes+=seconds/60;
+            seconds=seconds%60;
+            hours+=minutes/60;
+            minutes=minutes%60;
+            System.out.println("Total Number of hours is " + hours);
+            System.out.println("Total Number of minutes is " + minutes);
+            System.out.println("Total Number of seconds is " + seconds);    
+    }
+}
